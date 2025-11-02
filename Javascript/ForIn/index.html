@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+            <form action="">
+                <input type="text">
+                <input type="email">
+                <input type="Password">
+            </form>
+
+            <Script>
+                let form = document.forms[0];
+
+                let inputs = form.elements;
+
+                let Placeholders = ["Enter Name Please","Enter Email Please","Enter Password Please"];
+
+                for(let i =0; input.length;i++){
+                    inputs[i].Placeholder = Placeholders[i];
+                    inputs[i].Style.margin = "5px";
+                    inputs[i].style.Padding = "10px";
+                    inputs[i].Style.border = "1px solid gray";
+                }
+            </Script>
+    
+</body>
+</html>
