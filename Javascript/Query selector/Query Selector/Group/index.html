@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hell World</h1>
+    <h2>Hello</h2>
+    <h3>Hello World</h3>
+    <p>This is a paragraph</p>
+
+    <script>
+        const groupSelect = document.querySelectorAll('h1,h2,p');
+        groupSelect.forEach(variable=>{
+            variable.style.color = 'pink';
+            variable.textcontent = 'This Is Changed All Elements Text';
+        })
+    </script>
+    
+</body>
+</html>
