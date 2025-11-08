@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Student</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        table {border-collapse: collapse;Width: 500px;margin-top: 10px;}
+        th,td {border: 1px solid black; padding: 6px 8px;}
+        th {background: #836868;}
+
+    </style>
+</head>
+<body onload="loadstudent()">
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Marks</th>
+
+            </tr>
+        </thead>
+        <tbody id="studentBody"></tbody>
+    </table>
+
+    <script>
+        var students = [
+             {roll:1,name:"Harry",marks:75},
+             {roll:2,name:"Ravi",marks:60},
+             {roll:3,name:"Dhiraj",marks:78},
+             {roll:4,name:"Sujit",marks:95},
+             
+        ]
+
+
+
+        function loadstudent(){
+            var body = document.getElementById("studentBody");
+            body.innerText = "";
+            for(let s of students){
+                body.innerHTML += `
+                <tr>
+                    <td>${s.roll}</td>
+                     <td>${s.name}</td>
+                      <td>${s.marks}</td>
+                    </tr>
+                    `;
+                
+                    
+                   
+                   
+                    
+                
+                                    
+
+                                        
+                    
+                
+                    
+
+                  
+                  
+                  
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>
